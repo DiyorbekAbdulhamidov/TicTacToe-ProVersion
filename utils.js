@@ -15,4 +15,4 @@ export function renderBoard(board = []) {
 	}
 
 	wrapper.appendChild(fragment);
-}
+}//
