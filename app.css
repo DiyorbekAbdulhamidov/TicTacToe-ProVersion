@@ -1,0 +1,76 @@
+* {
+	user-select: none;
+}
+body {
+	margin: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: black;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+	display: flex;
+	gap: 1rem;
+}
+
+.game {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	width: 400px;
+	height: 400px;
+	display: grid;
+	background-color: blueviolet;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 4px;
+	position: relative;
+	padding: 4px;
+	margin-bottom: 1rem;
+}
+
+.cell {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	font-size: 35px;
+	display: grid;
+	place-items: center;
+	transition: 0.03s linear transform;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 50px;
+	color: white;
+}
+
+.cell:active:not(:disabled) {
+	scale: 0.95;
+}
+
+button {
+	padding: 0.5rem 1rem;
+	font-size: 25px;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: black;
+	border: solid 2px blueviolet;
+	color: white;
+}
+
+button:disabled {
+	background-color: rgb(67, 66, 66);
+	cursor: not-allowed;
+}
+
+.histories {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
